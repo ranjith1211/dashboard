@@ -1,0 +1,58 @@
+.leftbarA {
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  height: 610px;
+  grid-template-areas:
+    "a a b b b b"
+    "a a b b b b"
+    "c c d d e e"
+    "c c d d e e"
+    "f f f f g g"
+    "f f f f g g";
+  margin-top: 5px;
+  background-color: #fff;
+}
+
+.leftbarA div {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftbar1 {
+  grid-area: a;
+}
+.leftbar2 {
+  grid-area: b;
+}
+.leftbar3 {
+  grid-area: c;
+}
+.leftbar4 {
+  grid-area: d;
+}
+.leftbar5 {
+  grid-area: e;
+}
+.leftbar6 {
+  grid-area: f;
+}
+.leftbar7 {
+  grid-area: g;
+}
+
+@media only screen and (max-width: 600px) {
+  .leftbar {
+    width: 80%;
+    grid-template-areas:
+      "a a a a"
+      "b b b b"
+      "c c c c"
+      "d d d d"
+      "e e e e"
+      "f f f f"
+      "g g g g";
+  }
+}
